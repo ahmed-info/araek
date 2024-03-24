@@ -4,7 +4,7 @@ require_once 'functions.php';
      $response =   validateSignup($_POST);
      if($response['status']){
         if(createUser($_POST)){
-            header('location:../../login_en.php?login');
+            header('location:../../login_en.php?login&newuser');
         }else{
 echo "<script>alert('error something')</script>";
         }
