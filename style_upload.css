@@ -1,0 +1,89 @@
+.fatam01{
+    width: 100%;
+    direction: rtl;
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    background: #F5F8FA;
+    position: fixed;
+    top: 0px;
+}
+.fatam02{
+    width: 100%;
+}
+.fatam03{
+    margin: 15px 20px 15px auto;
+    font-size: 25px;
+}
+.fatam04{
+    margin: 0px 20px;
+    float: left;
+    color: #1DA1F2;
+    font-size: 25px;
+}
+.fatam05{
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+}
+.fatam06{
+    font-size: 24px;
+    margin: 30px 30%;
+}
+.fatam07{
+    width: 20%;
+    background: #D9EFFF;
+    border: 1px solid #D9EFFF;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.fatam08{
+    display: inline-block;
+    box-shadow: 1px 1px 5px #95d3ff;
+    border: 1px solid #D9EFFF;
+    height: 300px;
+    width: 50%;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    resize: none;
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+}
+.fatam09{
+    text-align: center;
+    font-size: larger;
+    color: #126ace;
+}
+.fatam10{
+    text-align: center;
+    font-size: larger;
+    color: red;
+}
+.fatam11{
+    background: red;
+    font-size: large;
+}
+.Input{
+    font: 20px Verdana;
+    border: 1px solid orange;
+    width: 300px;
+}
+input::-webkit-inner-spin-button , ::-webkit-outer-spin-button{
+    margin: 0px;
+    -webkit-appearance: none;
+}
+.Submit{
+    font: 20px Verdana;
+    border: 1px solid orange;
+    width: 300px;
+}
+.comm{
+    width: 100%;
+    direction: ltr;
+    position: fixed;
+    top: 0px;
+    margin: 0px 0px 0px 75%;
+}

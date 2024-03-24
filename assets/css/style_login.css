@@ -1,0 +1,168 @@
+.style0 {
+    background-image: url("../pic/2.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.style01 {
+    color: #1DA1F2;
+    font-size: large;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align: right;
+    width: 80%;
+    border: 1px solid #1DA1F2;
+}
+
+input::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    margin: 0px;
+    -webkit-appearance: none;
+}
+
+.style02 {
+    padding: 10px;
+}
+
+.style03 {
+    display: grid;
+    grid-template-areas:
+        'main main main main main'
+        'right right left left left';
+    margin: 50px auto;
+    grid-gap: 10px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.style03 div {
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    ;
+}
+
+.style04 {
+    text-decoration: none;
+}
+
+.style05 {
+    background: #1DA1F2;
+    color: #fff;
+    font-size: large;
+    height: 100%;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    font-family: auto;
+    text-shadow: 1px 1px 1px #333;
+    border: 1px solid #1DA1F2;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.style05:hover {
+    background: #ffffff;
+    color: #1DA1F2;
+}
+
+.style06 {
+    background: #1DA1F2;
+    color: #fff;
+    font-size: large;
+    height: 50%;
+    padding: 12px 0px;
+    font-weight: bold;
+    font-family: auto;
+    text-shadow: 1px 1px 1px #333;
+    border: 1px solid #1DA1F2;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.style06:hover {
+    background: #fff;
+    color: #1DA1F2;
+}
+
+.style07 {
+    height: 30%;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Body,
+html {
+    height: 100%;
+    margin: 0px;
+}
+
+.style08 {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 500px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 80%;
+    z-index: 2;
+    /*تحدد الاولوية لاي ستايل*/
+    top: 50%;
+    left: 50%;
+}
+
+.style09 {
+    text-align: center;
+    max-width: 500px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 80%;
+    margin: 5% auto;
+    top: 50%;
+    left: 50%;
+}
+
+.style10 {
+    text-align: center;
+    font-size: larger;
+    color: red;
+}
+
+.style11 {
+    background: red;
+    font-size: large;
+}
+
+.style12 {
+    text-align: center;
+    font-size: larger;
+    color: #126ace;
+}
+
+.style13 {
+    font-size: large;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border: 1px solid #1DA1F2;
+}
+
+.style13 a {
+    text-decoration: none;
+    color: #1DA1F2;
+}

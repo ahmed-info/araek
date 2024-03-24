@@ -1,0 +1,121 @@
+.style01{
+    width: 100%;
+    direction: rtl;
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    background: #F5F8FA;
+    top: 0px;
+}
+.style02{
+    width: 100%;
+}
+.style03{
+    margin: auto 0px 0px 0px;
+    font-size: x-large;
+}
+.style04{
+    margin: 0px 20px;
+    float: left;
+    color: #1DA1F2;
+    font-size: 50px;
+}
+.style05{
+    display: inline;
+    height: 137px;
+    width: 161px;
+}
+
+.style06{
+    height: 8%;
+    width: 8%;
+    background-color: #F5F8FA;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+.style07{
+    text-decoration: none;
+    color: #000;
+    font-size: x-large;
+    margin: auto 20px;
+}
+.style08{
+    margin: 0px 20px;
+    color: #1DA1F2;
+    font-size:50px;
+}
+.style09{
+    text-align: center;
+    font-size: larger;
+    color: red;
+}
+.style10{
+    direction: rtl;
+    text-align: center;
+}
+.style11{
+    height: 8%;
+    width: 8%;
+    background-color: #F5F8FA;
+    border-radius: 50%;
+    text-align: center;
+}
+.style12{
+    font-size: large;
+    font-weight: bold;
+    display: inline;
+}
+.style13{
+    font-size: larger;
+    font-weight: bold;
+    text-align: right;
+    direction: rtl;
+}
+.style14{
+    text-align: center;
+    height: 20%; 
+    width: 20%;
+}
+.style15{
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    background: #F5F8FA;
+}
+.style16{
+    background: #1DA1F2;
+    margin: 1% auto;
+    text-align: center;
+}
+.style16:hover{
+    cursor: pointer;
+}
+.style17{
+    text-align: center;
+    font-size: larger;
+    color: #126ace;
+}
+.style18{
+    width: 300px;
+    background: #1DA1F2;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+.style18 a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+.style19{
+    height: 25%; 
+    width: 25%; 
+    margin: auto;
+}
+.style20{
+    text-align: right;
+    direction: rtl;
+}

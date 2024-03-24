@@ -1,0 +1,50 @@
+.lang {
+    background: #D9D9D9;
+    width: 40px;
+    height: 40px;
+}
+
+.lang a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    margin: auto;
+    color: black;
+}
+
+.bg-img {
+    text-align: center;
+}
+
+/* .style03 {
+    display: inline;
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+    transform: translate(-50%, -50%);
+}
+
+.style03 p {
+    text-align: center;
+} */
+
+.btn-login {
+    width: 335px;
+    height: 57px;
+    background: #1DA1F2;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.btn-login a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    color: #F5F8FA;
+}
+
+.btn-login p {
+    padding: 5% 0px 0px 0px;
+}
