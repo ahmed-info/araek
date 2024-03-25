@@ -9,4 +9,3 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/<?=$data['style']?>.css" rel="stylesheet">
 </head>
-<body>

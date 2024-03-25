@@ -57,6 +57,7 @@
 require_once('assets/functions.php');
 showPage("header",['page_title'=>'صفحة الدخول','style'=>'style_login']);
 ?>
+<body class="style0">
 <form action="" method="post">
 
   <div class="style0"></div>

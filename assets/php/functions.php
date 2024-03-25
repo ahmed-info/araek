@@ -49,6 +49,42 @@ function validateSignup($form_data){
     }
     return $response;
 }
+
+///validate login
+function validateLogin($form_data){
+    $response = array();
+    $response['status'] = true;
+    $blank = false;
+
+    if(!$form_data['user_name_email']){
+        $response['msg'] = "اسم المستخدم او الايميل مطلوب";
+        $response['status'] = false;
+        $response['field'] = "user_name_email";
+            $blank = true;
+
+    }
+  
+
+    if(!$form_data['user_pass']){
+        $response['msg'] = "ادخل كلمة السر";
+        $response['status'] = false;
+        $response['field'] = "user_pass";
+        $blank = true;
+
+    }
+   
+    if(!$blank && !checkLogin($form_data)['status']){
+        $response['msg'] = "خطأ في الايميل\اسم المستخدم او كلمة المرور";
+        $response['status'] = false;
+        $response['field'] = "checkuser";
+
+    }else{
+    $response['user'] = checkLogin($form_data)['user'];
+
+    }
+    
+    return $response;
+}
 //check duplicate email
 function isEmailRegistered($email){
     global $dodobe;
@@ -67,9 +103,9 @@ function isUsernameRegistered($username){
 }
 
 function showError($field){
-if(isset($_SESSION['error'])){
-$error = $_SESSION['error'];
-    if(isset($error['field']) && $field == $error['field']){
+    if(isset($_SESSION['error'])){
+        $error = $_SESSION['error'];
+        if(isset($error['field']) && $field == $error['field']){
 ?>
 <div class="text-danger">
     <?=$error['msg']?>
@@ -84,6 +120,22 @@ function showFormData($field){
         $formdata = $_SESSION['formdata'];
     return $formdata[$field];
 }
+}
+//checklogin
+function checkLogin($login_data){
+global $dodobe;
+$user_name_email = $login_data['user_name_email'];
+$password = md5($login_data['user_pass']);
+$query = "SELECT * FROM user_info WHERE (user_name = '$user_name_email' || user_email = '$user_name_email') && user_pass = '$password'";
+$run = mysqli_query($dodobe,$query);
+$data['user'] = mysqli_fetch_assoc($run)?? array();
+
+if(count($data['user'])>0){
+    $data['status'] =true;
+}else{
+    $data['status'] =false;
+}
+return $data;
 }
 //create new user
 function createUser($data){

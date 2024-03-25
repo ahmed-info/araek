@@ -1,6 +1,12 @@
 <?php 
 require_once('assets/php/functions.php');
-showPage("header",['page_title'=>'home page','style'=>'custom']);
+if(isset($_SESSION['Auth'])){
+    echo "user is logined";
+    $userdata = $_SESSION['userdata'];
+    echo "<pre>";
+    print_r($userdata);
+}else{
+    showPage("header",['page_title'=>'home page','style'=>'custom']);
 ?>
     <div class="lang">
         <a href="index_ar.php">AR</a>
@@ -22,5 +28,7 @@ showPage("header",['page_title'=>'home page','style'=>'custom']);
     <?php 
 showPage("footer");
 
+
+}
 
 ?>
