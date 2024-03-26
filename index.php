@@ -1,10 +1,22 @@
 <?php 
 require_once('assets/php/functions.php');
 if(isset($_SESSION['Auth'])){
-    echo "user is logined";
-    $userdata = $_SESSION['userdata'];
-    echo "<pre>";
-    print_r($userdata);
+$user = getUser($_SESSION['userdata']['user_id']);
+}
+if(isset($_SESSION['Auth']) && $user['ac_status']==1){
+    //showPage("header",['page_title'=>'home page','style'=>'custom']);
+    showPage("home");
+
+}
+elseif(isset($_SESSION['Auth']) && $user['ac_status']==0){
+    showPage("header",['page_title'=>'verify page','style'=>'style_login']);
+    showPage("verify_email");
+
+}
+elseif(isset($_SESSION['Auth']) && $user['ac_status']==2){
+    showPage("header",['page_title'=>'block page','style'=>'custom']);
+    showPage("blocked");
+
 }else{
     showPage("header",['page_title'=>'home page','style'=>'custom']);
 ?>

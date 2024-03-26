@@ -121,7 +121,7 @@ function showFormData($field){
     return $formdata[$field];
 }
 }
-//checklogin
+//checkUser
 function checkLogin($login_data){
 global $dodobe;
 $user_name_email = $login_data['user_name_email'];
@@ -136,6 +136,15 @@ if(count($data['user'])>0){
     $data['status'] =false;
 }
 return $data;
+}
+
+//checkUser
+function getUser($user_id){
+global $dodobe;
+$query = "SELECT * FROM user_info WHERE user_id=$user_id";
+$run = mysqli_query($dodobe,$query);
+return mysqli_fetch_assoc($run);
+
 }
 //create new user
 function createUser($data){
@@ -153,4 +162,11 @@ $query = "INSERT INTO user_info(user_token,user_name,user_email,user_dep,user_nu
 $query.= "VALUES ('$user_token','$user_name','$user_email','$user_dep','$user_num','$user_pass','$user_img','$user_type')";
 return mysqli_query($dodobe,$query);
 }
+function verifyEmail($email){
+global $dodobe;
+$query = "UPDATE user_info SET ac_status=1 WHERE user_email = '$email'";
+return mysqli_query($dodobe,$query);
+}
+
+
 ?>
