@@ -78,4 +78,38 @@ require_once 'send_code.php';
       session_destroy();
       header('location:../../');
     }
+
+
+   if(isset($_GET['updateprofile'])){
+         $response =   validateUpateProfile($_POST,$_FILES['user_img']);
+         if($response['status']){
+            if(updateProfile($_POST,$_FILES['user_img'])){
+               header('location:../../?editprofile&success');
+            }else{
+               echo "يوجد خطأ ما";
+            }
+         }else{
+            $_SESSION['error'] = $response;
+      header('location:../../?editprofile');
+
+         }
+    }
+
+    //for add post
+   if(isset($_GET['addpost'])){
+      $response = validatePostImage($_FILES['post_img']);
+      if($response['status']){
+         if(createPOST($_POST,$_FILES['post_img'])){
+         header('location:../../?new_post_added');
+echo "okkk";
+         }else{
+            echo "يوجد خطأ ما";
+         }
+      }else{
+         $_SESSION['error'] = $response;
+         header('location:../../');
+      }
+   }
+
+   
 ?> 

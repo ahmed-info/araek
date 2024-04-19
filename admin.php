@@ -19,9 +19,9 @@
     $GetTokenCookie= $_COOKIE['token'];
     $cheack= "SELECT * FROM user_info WHERE user_token='$GetTokenCookie'";
     $runcheack= mysqli_query($dodobe,$cheack);
-    $nameea= mysqli_fetch_array($runcheack);
-    @$namee=$nameea['user_name'];
-    @$image=$nameea['user_img'];
+    $name= mysqli_fetch_array($runcheack);
+    @$namee=$name['user_name'];
+    @$image=$name['user_img'];
 
     if(isset($_POST['load03'])){
         $repost="SELECT * FROM post";
